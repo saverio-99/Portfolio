@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Shippori+Mincho&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    line-height:130%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Akaya Telivigala', cursive;
+}
+p, span , a {
+    font-family: 'Shippori Mincho', serif;
+}
+a{
+    text-decoration:none;
+}
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*Header START*/
+.header {
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    z-index: 9999999999;
+    justify-content: space-between;
+    width: 100%;
+    top:0;
+    max-width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #fff;
+}
+.logo img {
+    max-width:50px;
+}
+.nav ul {
+    list-style:none;
+}
+.nav ul li {
+    display:inline-block;
+    margin-right:10px;
+    border: 1px solid #333;
+    padding: 5px;
+    font-weight: bolder;
+    color: #000;
+}
+.nav ul li:hover{
+    transform: scale(1.1);
+}
+/*Header STOP*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*Footer START*/
+footer {
+
+    display:flex;
+    justify-content:center;
+    padding: 3% 0px;
+    background:#fff;
+}
+
+footer .col1 {
+
+    margin-right:6%;
+}
+
+footer a {
+    color:#333;
+}
+
+footer ul {
+    list-style:none;
+}
+
+footer ul li  {
+    padding: 2% 0;
+
+}
+.fab {
+    font-size:20px;
+}
+/*Footer STOP*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*Index START*/
+.intro {
+    margin-top:60px;
+    background-image:url('../img/portrait.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:10% 35%;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    color:#fff;
+    text-align:center;
+}
+.section-wrapper {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.about-me, .my-skills, .intro {
+    max-width:80%;
+    margin:0 auto;
+  
+
+}
+.about-me {
+    margin-top:30px;
+}
+.my-skills {
+    margin-top:30px;
+}
+.section-title {
+    margin-bottom:10px;
+}
+.skills h3 {
+    margin-top:15px;
+}
+.skill{
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+.skills:after{
+    content: "";
+  display: table;
+  clear: both;
+}
+.skill-1{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.skill-1:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 600px) {
+    .skill {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+/*Index STOP*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*Hobby START*/
+
+.hobby-body {
+   
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+}
+
+.hobby{
+    margin-top:60px;
+    max-width:80%;
+    margin:0 auto;
+}
+
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+.col{
+    display:flex;
+}
+.anime-wrapper-rs:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.col h1, .anime-wrapper-rs h1 {
+    color:#fff;
+    font-size: 100px;
+}
+.col p , .anime-wrapper-rs p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 15px;
+}
+.btn{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold ;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-size: cover;
+    background-position: center;
+    transition:transform 0.5s;
+}
+.card:hover{
+    transform: translateY(-10px);
+
+}
+.card h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+.otaku1{
+background-image: url(../img/otaku1.jpg);
+}
+.otaku2{
+background-image: url(../img/otaku2.jpg);
+}
+.otaku3{
+    background-image: url(../img/otaku3.jpg);
+}
+.otaku4{
+    background-image: url(../img/otaku4.jpg);
+}
+
+.ball1{
+    background-image: url(../img/ball1.jpg);
+}
+.ball2{
+    background-image: url(../img/ball2.jpg);
+}
+.ball3{
+    background-image: url(../img/ball3.jpg);
+}
+.ball4{
+    background-image: url(../img/ball4.jpg);
+}
+
+.basket1{
+    background-image: url(../img/basket1.jpg);
+}
+.basket2{
+    background-image: url(../img/basket2.jpg);
+}
+.basket3{
+    background-image: url(../img/basket3.jpg);
+}
+.basket4{
+    background-image: url(../img/basket4.jpg);
+}
+.anime-wrapper-rs, .anime-window {
+    width:50%;
+}
+.anime-window {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.anime-window .col {
+    width: 35%;
+}
+/*Hobby STOP*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/* Contact CSS Start*/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+        35deg,
+        #ccffff,
+        #ffcccc
+      );
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.containter {
+    margin-top:80px;
+
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contact .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contact .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contact .contactInfo .box .text h3{
+    font-weight: 500;
+    color:rgb(11, 2, 29)
+}
+.contactForm{
+    width: 40%;
+    padding:40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #666;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media(max-width:1000px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo{
+        width: 100%;
+    }
+}
+
+/* Contact CSS STOP*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
